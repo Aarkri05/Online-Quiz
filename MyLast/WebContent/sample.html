@@ -1,0 +1,86 @@
+<html>
+<head>
+<style>
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+}
+
+ul {
+	display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150%;
+    background-color: #0202021f;
+    position: fixed;
+    height: 105%;
+    overflow: hidden;
+	top: 0;
+}
+
+li{
+	float: left;}
+
+li a {
+    display: block;
+    color: #030a40;;
+    padding: 14px 16px;
+	text-align: center;
+    text-decoration: none;
+	border-right: 1px solid #1a2286
+}
+
+li a.active:hover {
+    background-color: #030a40;
+    color: white;
+	
+}
+
+li a:hover:not(.active) {
+    background-color: #030a40;
+    color: white;
+	
+}
+
+div{
+background-image: url("images/sam.gif");
+}
+
+div iframe
+{
+overflow: auto;
+float: left;
+position: absolute;
+width: 1300px;
+height: 500px; 
+}
+
+</style>
+</head>
+<body>
+<form action="/MyLast">
+
+<ul>
+  <li><a class="active" href="sample.html">Home</a></li>
+  <li><a href="forms.html">Register</a></li>
+  <li><a href="uploads.html">Tests</a></li>
+  <li><a href="samp.jsp">Login</a></li>
+<li><a href="login.html">Feedback</a></li>	
+<li><a href="demos.html">Results</a></li>
+<li><a href="demo.html">Downloads</a></li>
+</ul>
+
+<div style="padding:20px;margin-top:45px;background-color:#bc1ab969;height:1500px;">
+  <h2 style="color:white;"><b><i>Welcome!!</i></b></h2>
+<script>
+var d = new Date();
+var res= d.toDateString();
+var sel=res.fontcolor("white");
+document.write(sel);
+</script>
+  
+</div>
+</form>
+</body>
+</html>

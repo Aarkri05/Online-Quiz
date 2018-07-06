@@ -1,0 +1,64 @@
+<html>
+<body>
+<script>  
+function myForm(first){  
+var nam=document.mform.first.value;  
+//var email=document.myform.mail.value;   
+  
+if (nam==null || nam==""){  
+  alert("Name can't be blank");  
+}  
+}
+
+function myEmail(mail){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+				  
+        if (reg.test(mail.value) == false) 
+        {
+            alert("Invalid Email Address");
+            return false;
+        }
+
+        return true;
+
+}
+
+function myPass(pass){
+    var reg = /^([A-Za-z0-9]{5,6})$/;
+			  
+    if (reg.test(pass.value) == false) 
+    {
+        alert("Password must be length of 6 and only with alphanumberic no special allowed");
+        return false;
+    }
+
+    return true;
+
+}
+   
+</script>
+
+<form name="mform" action="MyLast" method="post">
+  <h5 style="color:white";>First name:</h5>
+  
+  <input type="text" name="first" onblur="myForm(this);" value=" " required>
+  <br><br>
+  <h5 style="color:white";>Last name:</h5>
+  
+  <input type="text" name="last" value=" ">
+  <br><br>
+  <h5 style="color:white";>Password:</h5>
+  
+  <input type="text" name="pass" onblur="myPass(this);" value=" ">
+  <br><br>
+  
+  <h5 style="color:white";>Email-id:</h5>
+  
+  <input type="text" name="mail" onblur="myEmail(this);" value=" " required>
+  
+  <br><br>
+  <input type="submit" value="Register">
+  
+</form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+<style>
+
+
+
+li{
+	float: left;
+	list-style-type: none;}
+
+li a {
+    display: block;
+    color: #030a40;;
+    padding: 14px 16px;
+	text-align: center;
+    text-decoration: none;
+	border-right: 1px solid #1a2286
+}
+
+li a.active:hover {
+    background-color: #030a40;
+    color: white;
+	
+}
+
+li a:hover:not(.active) {
+    background-color: #030a40;
+    color: white;
+	
+}
+
+
+</style>
+
+
+<body background="images/sam.gif">
+
+<script>  
+function mypass(lnames){  
+window.alert("Name must be your last name");
+	
+	}
+</script>
+<ul>
+  <li><a class="active" href="sample.html">Home</a></li>
+  <li><a href="forms.html">Register</a></li>
+  <li><a href="uploads.html">Tests</a></li>
+  <li><a href="pass.html">Login</a></li>
+<li><a href="login.html">Feedback</a></li>	
+</ul>
+
+<form  name="hform" action="MySecond" method="post">
+
+<br>
+
+<br>
+
+<br>
+<br>
+<h3 style="color:aqua;">Note:Please enter your last name</style>
+  <h5 style="color:white; text-align:center;">Username:<input type="text" name="lnames" onblur="myPass(this);" value=" " required>
+  </h5>
+  
+  <h5 style="color:white; text-align:center;">Password:<input type="text" name="pwds" value=" " required></h5>
+  <br>
+  
+  <input type="submit" value="Login" style="margin-left: 50%;">
+  
+</form>
+
+</body>
+</html>

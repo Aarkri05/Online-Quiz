@@ -1,0 +1,157 @@
+
+<html>
+<head>
+<style type="text/css">
+body {
+	background:
+		url("images/giphy5.gif");
+}
+
+ul {
+	display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150%;
+    background-color: #0202021f;
+    position: fixed;
+    height: 105%;
+    overflow: hidden;
+	top: 0;
+}
+
+li{
+	float: left;}
+
+li a {
+    display: block;
+    color: #030a40;;
+    padding: 14px 16px;
+	text-align: center;
+    text-decoration: none;
+	border-right: 1px solid #1a2286
+}
+
+li a.active:hover {
+    background-color: #030a40;
+    color: white;
+	
+}
+
+li a:hover:not(.active) {
+    background-color: #030a40;
+    color: white;
+	
+}
+
+.caption {
+	position: relative;
+	overflow: hidden;
+}
+
+.caption__media {
+	display: block;
+	float: left;
+	height: 200px;
+	width: 200px;
+}
+
+.caption__overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 10px;
+	color: white;
+	transform: translateY(100%);
+	transition: transform .35s ease-out;
+}
+
+.caption:hover .caption__overlay {
+	transform: translateY(0);
+}
+
+.caption__overlay__title {
+	margin: 0;
+	padding: 0 0 12px;
+	transform: translateY(calc(-100% - 10px)); /* +10px overlay padding */
+	transition: transform .35s ease-out;
+	opacity: 0;
+}
+
+.caption:hover .caption__overlay__title {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.caption::before {
+	content: ' ';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: transparent;
+	transition: background .35s ease-out;
+}
+
+.caption:hover::before {
+	background: rgba(0, 0, 0, .8);
+}
+
+
+
+ 
+
+
+</style>
+
+<title>Quizz</title>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="sample.html">Home</a></li>
+  <li><a href="forms.html">Register</a></li>
+  <li><a href="uploads.html">Tests</a></li>
+  <li><a href="samp.jsp">Login</a></li>
+<li><a href="login.html">Feedback</a></li>	
+</ul>
+	
+ 
+	<div style="position: absolute; left: 5%; top: 35%;" >
+		<table cellpadding="0" cellspacing="50">
+
+			<tr>
+				<td class="pic"><a href="test1.html">
+						<div class="caption">
+							<img class="caption__media" width="200" height="200"src="images/java.jpg" />
+							<div class="caption__overlay">
+								<h1 class="caption__overlay__title">Java!</h1>
+								<p class="caption__overlay__content">Take a Java Quiz to
+									test your knowledge..</p>
+							</div>
+						</div>
+						
+				
+				</a></td>
+				<td class="pic"><a href="test2.html">
+						<div class="caption">
+							<img class="caption__media" width="200" height="200"
+								src="images/javascript.jpg" />
+							<div class="caption__overlay">
+								<h1 class="caption__overlay__title">JS!</h1>
+								<p class="caption__overlay__content">Find out your
+									JavaScript level..</p>
+							</div>
+						</div>
+				</a></td>
+				
+			</tr>
+
+		</table>
+	</div>
+
+
+</body>
+</html>
