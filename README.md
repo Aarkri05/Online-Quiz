@@ -1,4 +1,4 @@
-# Sample-codes
+# Online Quiz using Java,JSP and Mysql
 Assignments
  ----------------------------------------------------------
 This is the simple Java code for a online quiz(with UI Design)
